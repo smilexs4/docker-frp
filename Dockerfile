@@ -12,7 +12,7 @@ RUN addgroup -S frp \
  && curl -fSL https://github.com/fatedier/frp/releases/download/${FRP_VERSION}/frp_${FRP_VERSION:1}_linux_arm64.tar.gz -o frp.tar.gz \
  && tar -zxv -f frp.tar.gz \
  && rm -rf frp.tar.gz \
- && mv frp_*_linux_amd64 /frp \
+ && mv frp_*_linux_arm64 /frp \
  && chown -R frp:frp /frp \
  && mv /entrypoint.sh /frp/
 
